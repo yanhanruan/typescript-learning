@@ -48,6 +48,7 @@ exampleObj.prop1 = "yOHO"
 //     albums: (string | number)[]
 // }
 
+// check readme.md to figure out the differences between type and interface
 interface Guitarist {
     name?: string,
     active?: boolean,
