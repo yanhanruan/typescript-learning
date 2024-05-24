@@ -68,6 +68,8 @@ export default class ListTemplate implements DOMList {
                 fullList.removeItem(item.id)
                 this.render(fullList)
             })
+
+            this.ul.append(li)
         });
 
     }

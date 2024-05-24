@@ -1,4 +1,4 @@
-import ListItem,{Item} from './ListItem';
+import ListItem from './ListItem';
 
 interface List {
     list: ListItem[],
@@ -35,6 +35,8 @@ export default class FullList implements List {
 
         parsedList.forEach(itemObj => {
             const newListItem = new ListItem(itemObj._id, itemObj._item, itemObj._checked)
+
+            // this.addItem(newListItem) // `this.addItem` is equal to `FullList.instance.addItem` in the context
             FullList.instance.addItem(newListItem)
         })
     }
